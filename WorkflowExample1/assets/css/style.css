@@ -69,8 +69,7 @@ body{
         -moz-appearance: none;
         -webkit-appearance: none;
         background: url(../images/select-arrow.png) right center no-repeat;
-        background: url(../images/arrow.jpg) 99% center no-repeat;
-        background-size: 20px auto;
+        background-size: auto 50px;
     }
     .req{
         color: #ff0000;

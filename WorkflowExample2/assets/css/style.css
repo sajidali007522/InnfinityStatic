@@ -1,0 +1,215 @@
+body{
+}
+.outer-section{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: url(../images/bg.jpg) no-repeat;
+    background-size: cover;
+}
+.left-article{
+    width: calc(100% - 650px);
+    position: relative;
+    background: url(../images/banner.png) center center no-repeat; 
+    background-size: cover;
+}
+    .overlay{
+        position: fixed;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(55,29,103, 0.5);
+    }
+.right-article{
+    width: 650px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+    .right-article ::-webkit-scrollbar {
+        width: 7px;
+    }
+    .right-article ::-webkit-scrollbar-track {
+        background: rgba(0,0,0, 0.2);
+    }
+    .right-article ::-webkit-scrollbar-thumb {
+        background-image:linear-gradient(to right,#45166a,#83157b 75%,#bc158a);
+    }
+    .right-article ::-webkit-scrollbar-thumb:hover {
+        background: #83157b;
+    }
+.article-inner{
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 0 60px;
+}
+.right-article h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 50px;
+}
+    .field-wrap{
+        padding: 0 0 30px;
+    }
+    .field-label{
+        font-size: 14px;
+    }
+    .field-label label{
+        margin: 0;
+        color: #ccc;
+    }
+.form-control{
+    background: none !important;
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: none !important;
+    padding: 0 0 2px;
+    font-size: 15px;
+    color: #fff !important;
+    height: auto;
+    border-radius: 0;
+}
+select.form-control{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../images/arrow.png) 99% center no-repeat !important;
+    background-size: auto 10px !important;
+    min-height: 50px;
+}
+select.form-control{
+}
+option{
+    color: #000;
+}
+.req{
+    color: #ff0000;
+}
+
+.card-footer{
+    text-align: center;
+    padding: 10px 0; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 13px;
+    color: #ccc;
+}
+    .card-btn{
+        margin-left: auto;
+    }
+.modal-body{
+	padding: 50px 25px 30px;
+}
+	.modal-content .close{
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1;
+		opacity: 1;
+		text-align: center;
+        padding: 4px 20px 8px;
+        background: #1abc9c;
+		color: #fff;
+		outline: none;
+		border:none;
+	}
+	.waitn-txt{
+		text-align: center;
+		font-size: 24px;
+		line-height: 1.3;
+		padding-top: 10px;
+	}
+.btn{
+    padding: 11px 35px 12px;
+    border: none;
+}
+.btn-outline{
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 13px 25px 15px;
+    border-radius: 0;
+}
+.btn-outline:hover{
+    background: #fff;
+    color: #000;
+}
+
+
+@media(max-width: 1600px){
+    .left-article{
+        width: calc(100% - 550px);
+    }
+    .right-article{
+        width: 550px;
+    }
+}
+
+@media(max-width: 1400px){
+    .left-article{
+        width: calc(100% - 500px);
+    }
+    .right-article{
+        width: 500px;
+    }
+}
+@media(max-width: 1100px){
+    .left-article{
+        width: calc(100% - 450px);
+    }
+    .right-article{
+        width: 450px;
+    }
+    .article-inner{
+        padding: 0 30px;
+    }
+}
+@media(max-width: 991px){
+    .outer-section{
+        display: block;
+    }
+    .left-article{
+        width: 100%;
+        height: 300px;
+    }
+    .right-article{
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .article-inner{
+        padding: 0 30px;
+    }
+    .article-inner{
+        max-height: inherit;
+    }
+}
+
+@media(max-width: 767px){
+    .left-article{
+        height: 150px;
+    }
+    .right-article{
+        padding: 50px 0 20px;
+    }
+    .copyright{
+    	width: 100%;
+    }
+    .card-btn{
+        width: 100%;
+        text-align: center;
+    	order: -1;
+    	margin-bottom: 25px;
+    }
+    .waitn-txt{
+    	font-size: 20px;
+    }
+}
