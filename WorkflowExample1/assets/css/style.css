@@ -71,6 +71,33 @@ body{
         background: url(../images/select-arrow.png) right center no-repeat;
         background-size: auto 50px;
     }
+    .radio-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+        .radio-contain{
+            margin: 0 15px 0 0;
+        }
+        .radio-contain .radio{
+            overflow: hidden;
+            visibility: hidden;
+            padding: 0;
+            margin: 0;
+            width: 0;
+            height: 0;
+        }
+        .radio-contain label{
+            display: inline-block;
+            padding: 10px 35px 13px;
+            cursor: pointer;
+            border: 2px solid #0fefc2;
+            line-height: 1;
+        }
+        .radio-contain input[type="radio"]:checked + label{
+            background-image: linear-gradient(#0fefc2, #6eb7a8);
+            color: #fff;
+        }
     .req{
         color: #ff0000;
     }
